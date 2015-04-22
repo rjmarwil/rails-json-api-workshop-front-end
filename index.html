@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Json Front End</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script id="json-template" type="text/x-handlebars-template">
+
+
+     <div class="product">
+       {{#each this}}
+        <div>{{name}}</div>
+        <div>{{description}}</div>
+        <div>{{price}}</div>
+        {{/each}}
+     </div>
+
+
+    </script>
+
+    <div id="context"></div>
+  </body>
+</html>
